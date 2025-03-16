@@ -15,7 +15,7 @@ const outSideTemp =null
 let userEmail;
 const id=Symbol("123")
 const anotherId =Symbol("123")
-console.log(id===anotherId)//false alway create unique
+//console.log(id===anotherId)//false alway create unique
 
 const bigNumber = 3443434344n
 
@@ -31,8 +31,29 @@ const myFunction =function(){
     console.log("Hello World!")
 }
 
+/*
 console.log(typeof myFunction)//function
 console.log(typeof myObj)
 console.log(typeof bigNumber)
-console.log(typeof heros)
+console.log(typeof heros)*/
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Stack(Primitive),Heap(Non-Primitie)
+
+let firstPersonName ="Nehan"
+let secondPersonName = firstPersonName
+secondPersonName = "Aariz"
+console.log(firstPersonName)
+console.log(secondPersonName)
+
+//heap
+let myUserId={
+    name:"Parvez",
+    email: "parveza@google.com"
+}
+let anotherUserId =myUserId
+anotherUserId.name="Parvez Ahmed"
+
+console.log(myUserId.name)
+console.log(anotherUserId.name)
